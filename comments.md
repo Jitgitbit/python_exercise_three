@@ -25,3 +25,5 @@ python3 manage.py runserver    ------>   http://127.0.0.1:8000/
 
 python3 manage.py startapp blog ---> create a blog app within the project !
 python3 manage.py startapp portfolio ---> create a portfolio app within the project !
+
+python3 -m pip install Pillow
