@@ -27,3 +27,5 @@ python3 manage.py startapp blog ---> create a blog app within the project !
 python3 manage.py startapp portfolio ---> create a portfolio app within the project !
 
 python3 -m pip install Pillow
+
+python3 manage.py migrate
