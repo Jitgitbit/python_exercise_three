@@ -29,3 +29,4 @@ python3 manage.py startapp portfolio ---> create a portfolio app within the proj
 python3 -m pip install Pillow
 
 python3 manage.py migrate
+python3 manage.py makemigrations
