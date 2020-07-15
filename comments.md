@@ -31,3 +31,7 @@ python3 -m pip install Pillow
 python3 manage.py migrate
 python3 manage.py makemigrations
 python3 manage.py migrate
+
+python3 manage.py createsuperuser
+thierrydekelver
+django1234 (python3 manage.py changepassword username)
