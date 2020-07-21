@@ -1,5 +1,11 @@
 <h1>Thierry's portfolio</h1>
 
+{% load static %}
+
+<a href="{% static 'portfolio/ThierryDekelverCV20200616.pdf' %}">Resume</a>
+
+<img src="{% static 'portfolio/Entebbe2019-VictoriaLake.jpg' %}">
+
 {% for project in projects %}
 
 <h2>{{ project.title }}</h2>
