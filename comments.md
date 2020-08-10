@@ -211,3 +211,5 @@ git pull origin
 git push origin
 "So don't forget to keep them in sync both locally and on github now !!!"
 ----------------------------------------
+exiting console: type exit
+exiting VIM: type :qa! HIT enter
