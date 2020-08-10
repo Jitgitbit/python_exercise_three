@@ -175,3 +175,36 @@ web, Force HTTPS: Enabled
 
 HIT Reload thierryD.pythonanywhere.com
 ----------------------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+cd python_exercise_three/
+workon portfoliovenv
+
+git status
+nano .gitignore
+
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+/static/
+
+ctrl+x
+y
+HIT enter
+git status
+git add .gitignore
+git status
+git commit -m "Added a gitignore via PythonAnywhere"
+git config --global user.email "mail-address@mail.com"
+git config --global user.name "your name"
+git commit -m "Added a gitignore via PythonAnywhere"
+git status
+git rm -r --cached .
+git add .
+git commit -m "removed old stuff"
+git push origin
+----------------------------------------
