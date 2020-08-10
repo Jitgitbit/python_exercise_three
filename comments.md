@@ -47,3 +47,18 @@ ls
 pwd
 git clone https://github.com/Jitgitbit/python_exercise_three.git
 ls
+------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+mkvirtualenv --python=/usr/bin/python3.8 portfoliovenv
+python
+exit()
+deactivate
+cd .virtualenvs
+ls
+cd ..
+workon portfoliovenv
+pip install django pillow
+-----------------------
