@@ -206,5 +206,8 @@ git status
 git rm -r --cached .
 git add .
 git commit -m "removed old stuff"
+git status
+git pull origin
 git push origin
+"So don't forget to keep them in sync both locally and on github now !!!"
 ----------------------------------------
