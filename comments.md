@@ -79,6 +79,7 @@ Enter the path to your web app source code :
 Go to directory
 python_exercise_three/
 settings.py
+DEBUG = False
 ALLOWED_HOSTS = ['thierryD.pythonanywhere.com']
 HIT SAVE
 CLICK ON PYTHONLOGO (left corner) to go back, web, HIT Reload thierryD.pythonanywhere.com
