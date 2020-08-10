@@ -62,3 +62,83 @@ cd ..
 workon portfoliovenv
 pip install django pillow
 -----------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+cd python_exercise_three/
+pwd
+ls
+
+OPEN UP NEW TAB
+INSIDE Python Anywhere:
+web, +add a new web app, next, Manual configuration, next, Enter path to a virtualenv, if desired :
+portfoliovenv
+Enter the path to your web app source code :
+/home/thierryD/python_exercise_three
+Go to directory
+python_exercise_three/
+settings.py
+ALLOWED_HOSTS = ['thierryD.pythonanywhere.com']
+HIT SAVE
+CLICK ON PYTHONLOGO (left corner) to go back, web, HIT Reload thierryD.pythonanywhere.com
+Working directory:
+/home/thierryD/python_exercise_three
+
+INSIDE WSGI configuration file:
+
+ONLY LEAVE:
+# +++++++++++ DJANGO +++++++++++
+# To use your own django app use code like this:
+#import os
+#import sys
+#
+## assuming your django settings file is at '/home/thierryD/mysite/mysite/settings.py'
+## and your manage.py is is at '/home/thierryD/mysite/manage.py'
+#path = '/home/thierryD/mysite'
+#if path not in sys.path:
+#    sys.path.append(path)
+#
+#os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+#
+## then:
+#from django.core.wsgi import get_wsgi_application
+#application = get_wsgi_application()
+
+AND THEN:
+import os
+import sys
+
+# assuming your django settings file is at '/home/thierryD/mysite/mysite/settings.py'
+# and your manage.py is is at '/home/thierryD/mysite/manage.py'
+path = '/home/thierryD/mysite'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+# then:
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
+AND THEN:
+import os
+import sys
+
+# assuming your django settings file is at '/home/thierryD/mysite/mysite/settings.py'
+# and your manage.py is is at '/home/thierryD/mysite/manage.py'
+path = '/home/thierryD/python_exercise_three'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'python_exercise_three.settings'
+
+# then:
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
+HIT SAVE
+CLICK ON PYTHONLOGO (left corner) to go back, web, HIT Reload thierryD.pythonanywhere.com
+
+OPEN UP NEW TAB
+thierryD.pythonanywhere.com
