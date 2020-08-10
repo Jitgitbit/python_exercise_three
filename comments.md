@@ -162,6 +162,11 @@ web, Enter URL:
 /static/
 Enter path:
 /home/thierryD/python_exercise_three/static
+add another one: Enter URL:                   -----> this is needed because DEBUG = False
+/media/
+Enter path:
+/home/thierryD/python_exercise_three/media
 
 HIT Reload thierryD.pythonanywhere.com
+cmd+shift+r (hard reload)
 ----------------------------------------
