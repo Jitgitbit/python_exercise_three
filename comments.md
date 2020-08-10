@@ -38,3 +38,12 @@ django1234 (python3 manage.py changepassword username)
 
 python3 manage.py makemigrations
 python3 manage.py migrate
+
+------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+pwd
+git clone https://github.com/Jitgitbit/python_exercise_three.git
+ls
