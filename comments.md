@@ -39,6 +39,9 @@ django1234 (python3 manage.py changepassword username)
 python3 manage.py makemigrations
 python3 manage.py migrate
 
+
+PYTHON ANYWHERE !!!
+===================
 ------------------------
 INSIDE Python Anywhere:
 dashboard, bash
@@ -143,3 +146,22 @@ CLICK ON PYTHONLOGO (left corner) to go back, web, HIT Reload thierryD.pythonany
 
 OPEN UP NEW TAB
 thierryD.pythonanywhere.com
+--------------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+python manage.py collectstatic
+ls 
+cd static
+pwd
+
+IN OTHER TAB
+INSIDE Python Anywhere:
+web, Enter URL:
+/static/
+Enter path:
+/home/thierryD/python_exercise_three/static
+
+HIT Reload thierryD.pythonanywhere.com
+----------------------------------------
