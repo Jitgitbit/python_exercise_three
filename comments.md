@@ -38,3 +38,173 @@ django1234 (python3 manage.py changepassword username)
 
 python3 manage.py makemigrations
 python3 manage.py migrate
+
+
+PYTHON ANYWHERE !!!
+===================
+------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+pwd
+git clone https://github.com/Jitgitbit/python_exercise_three.git
+ls
+------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+mkvirtualenv --python=/usr/bin/python3.8 portfoliovenv
+python
+exit()
+deactivate
+cd .virtualenvs
+ls
+cd ..
+workon portfoliovenv
+pip install django pillow
+-----------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+cd python_exercise_three/
+pwd
+ls
+
+OPEN UP NEW TAB
+INSIDE Python Anywhere:
+web, +add a new web app, next, Manual configuration, next, Enter path to a virtualenv, if desired :
+portfoliovenv
+Enter the path to your web app source code :
+/home/thierryD/python_exercise_three
+Go to directory
+python_exercise_three/
+settings.py
+DEBUG = False
+ALLOWED_HOSTS = ['thierryD.pythonanywhere.com']
+HIT SAVE
+CLICK ON PYTHONLOGO (left corner) to go back, web, HIT Reload thierryD.pythonanywhere.com
+Working directory:
+/home/thierryD/python_exercise_three
+
+INSIDE WSGI configuration file:
+
+ONLY LEAVE:
+# +++++++++++ DJANGO +++++++++++
+# To use your own django app use code like this:
+#import os
+#import sys
+#
+## assuming your django settings file is at '/home/thierryD/mysite/mysite/settings.py'
+## and your manage.py is is at '/home/thierryD/mysite/manage.py'
+#path = '/home/thierryD/mysite'
+#if path not in sys.path:
+#    sys.path.append(path)
+#
+#os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+#
+## then:
+#from django.core.wsgi import get_wsgi_application
+#application = get_wsgi_application()
+
+AND THEN:
+import os
+import sys
+
+# assuming your django settings file is at '/home/thierryD/mysite/mysite/settings.py'
+# and your manage.py is is at '/home/thierryD/mysite/manage.py'
+path = '/home/thierryD/mysite'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+# then:
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
+AND THEN:
+import os
+import sys
+
+# assuming your django settings file is at '/home/thierryD/mysite/mysite/settings.py'
+# and your manage.py is is at '/home/thierryD/mysite/manage.py'
+path = '/home/thierryD/python_exercise_three'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'python_exercise_three.settings'
+
+# then:
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
+HIT SAVE
+CLICK ON PYTHONLOGO (left corner) to go back, web, HIT Reload thierryD.pythonanywhere.com
+
+OPEN UP NEW TAB
+thierryD.pythonanywhere.com
+--------------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+python manage.py collectstatic
+ls 
+cd static
+pwd
+
+IN OTHER TAB
+INSIDE Python Anywhere:
+web, Enter URL:
+/static/
+Enter path:
+/home/thierryD/python_exercise_three/static
+add another one: Enter URL:                   -----> this is needed because DEBUG = False
+/media/
+Enter path:
+/home/thierryD/python_exercise_three/media
+
+HIT Reload thierryD.pythonanywhere.com
+cmd+shift+r (hard reload)
+----------------------------------------
+INSIDE Python Anywhere:
+web, Force HTTPS: Enabled
+
+HIT Reload thierryD.pythonanywhere.com
+----------------------------------------
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+cd python_exercise_three/
+workon portfoliovenv
+
+git status
+nano .gitignore
+
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+/static/
+
+ctrl+x
+y
+HIT enter
+git status
+git add .gitignore
+git status
+git commit -m "Added a gitignore via PythonAnywhere"
+git config --global user.email "mail-address@mail.com"
+git config --global user.name "your name"
+git commit -m "Added a gitignore via PythonAnywhere"
+git status
+git rm -r --cached .
+git add .
+git commit -m "removed old stuff"
+git push origin
+----------------------------------------
