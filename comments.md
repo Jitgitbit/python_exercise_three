@@ -170,3 +170,8 @@ Enter path:
 HIT Reload thierryD.pythonanywhere.com
 cmd+shift+r (hard reload)
 ----------------------------------------
+INSIDE Python Anywhere:
+web, Force HTTPS: Enabled
+
+HIT Reload thierryD.pythonanywhere.com
+----------------------------------------
