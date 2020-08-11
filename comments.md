@@ -215,3 +215,21 @@ exiting console: type exit
 exiting VIM: type :qa! HIT enter
 ------------------------------------
 pip3 freeze > requirements.txt (in regular terminal)
+------------------------------------
+cmd+ctrl+space (adding emoji)
+INSIDE Python Anywhere:
+dashboard, bash
+(linux-server)
+ls
+cd python_exercise_three
+workon portfoliovenv
+git pull origin
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py collectstatic
+yes (overwrite?)
+after commit:
+git pull origin
+INSIDE Python Anywhere:
+web, HIT Reload thierryD.pythonanywhere.com
+-----------------------------------
