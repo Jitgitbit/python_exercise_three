@@ -213,3 +213,5 @@ git push origin
 ----------------------------------------
 exiting console: type exit
 exiting VIM: type :qa! HIT enter
+------------------------------------
+pip3 freeze > requirements.txt (in regular terminal)
