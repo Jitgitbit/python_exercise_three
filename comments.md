@@ -3,18 +3,18 @@ django-admin
 
 REMOVING from git locally
 1) (first remove it from github)
-2) rm -rf <python-exercise-two>/.git   NOPE -->  in directory:   rm -rf .git
+2) rm -rf <python-exercise-three>/.git   NOPE -->  in directory:   rm -rf .git
 3) (now remove the directory itself too)
 
 START:
-django-admin startproject python_exercise_two
+django-admin startproject python_exercise_three
 
 git init
 git add .
 git commit -m 'first'
 gst
 and then the github stuff...
-git remote add origin git@github.com:Jitgitbit/python_exercise_two.git
+git remote add origin git@github.com:Jitgitbit/python_exercise_three.git
 git push -u origin master
 gst
 DONE
